@@ -66,7 +66,6 @@ ensure_hypershift_cli() {
   log "/usr/bin/hypershift is not found. Trying to extract it from the hypershift operator."
 
   # Now, try to extract the hypershift CLI from the hypershift operator
-rokej marked this conversation as resolved.
   if extract_hypershift_cli; then
     log "Successfully extracted the hypershift CLI binary to /tmp/hypershift."
     export HYPERSHIFT="/tmp/hypershift"
